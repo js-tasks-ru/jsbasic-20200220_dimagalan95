@@ -10,6 +10,27 @@ function print(text) {
  * чтобы функция sayHello работала корректно
  */
 function isValid(name) {
+  let a = 0;
+
+  if (!name || name.length<4) {
+    return false;
+  } else {
+    for (let i=0; i<name.length; i++) {
+      let b = name[i];
+
+      if (b===' ') {
+        break;
+      } else {
+        a++;
+      }
+    }
+  }
+
+  if (a===name.length)  {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 function sayHello() {
