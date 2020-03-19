@@ -14,7 +14,6 @@ function getMinMax(str) {
     for (let b of a) {
         arr.push(b);
     }
-
   }
 
   for (let key of arr) {
